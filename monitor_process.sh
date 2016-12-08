@@ -3,7 +3,7 @@ process=`ps -ef |grep shUnicom:run|grep -v grep| awk '{print $10}'`
 #判断是否存在进程，不存在直接唤起
 #echo $process
 percent=4
-if [[ $process = "shUnicom:run" ]]
+if [[ $process == "shUnicom:run" ]]
 then
 	echo "checked！it's exist."
 	#判断：如果此时进程内存占用超过6%，kill并重启
