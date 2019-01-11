@@ -13,12 +13,12 @@ then
 	if [[ `echo "$current > $percent"|bc` -eq 1 ]]
 	then
 		sudo kill -9 $id
-		/usr/local/php/bin/php /home/wwwroot/pay/bestv/artisan shUnicom:run &
+		/usr/local/php/bin/php /home/wwwroot/pay/aaa/artisan shUnicom:run &
 		echo "restart it!"
 	else
 		echo 'still safe!'
 	fi
 else
-	/usr/local/php/bin/php /home/wwwroot/pay/bestv/artisan shUnicom:run &
+	/usr/local/php/bin/php /home/wwwroot/pay/aaa/artisan shUnicom:run &
 	echo "wake up!"
 fi
